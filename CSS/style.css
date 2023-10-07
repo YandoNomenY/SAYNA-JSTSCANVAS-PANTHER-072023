@@ -1,0 +1,510 @@
+body {
+    width:100%;
+    /*Couleur de l'arerière-plan en radial-gradient*/
+    Background : radial-gradient(126.67% 350.28% at -21.35% 0%,#11213F 0%, #0B0B0B 39.1%, rgba(2, 23, 64, 0.837641) 94.57%);
+    color: white;
+}
+
+header {
+    display: flex; /* disposition en vertical des éléments dans header*/
+    justify-content: space-around;
+}
+
+/*les icones SAYNA X MARVEL*/
+.marvel {
+    
+    display: flex;/* Pour aligner les élément dans la div*/
+    align-items: center; /*alignement vertical */
+    margin: 2vw  30vw 0 5vw;/*les marges de la div marvel*/ 
+}
+
+.marvel img {
+    max-width: 100%; /*Taille maximale qu'un contenu peut avoir*/
+    padding: 0.2vw; /*Espace entre les contenus*/
+}
+.nav-barre {
+    margin-left: 12vw;
+    align-items: center;
+    display: flex;
+    margin-right: 5vw;
+}
+.nav-barre a {
+    padding: 2vw 2vw 0 2vw; /*espace entre les éléments*/
+    text-decoration: none; /*Pas de soulignement*/
+    font-family: 'BEYNO';/* typogaraphie*/
+    font-size: 16px;/*taille des textes*/
+    color: #9E91B7;/*couleur des textes*/
+}
+#home {
+    text-decoration: underline;
+    text-decoration-color: #9E91B7;
+    text-decoration-thickness: 2px; /* Épaisseur du soulignement */
+    text-underline-offset: 5px; /* Décaler le soulignement vers la gauche */
+}
+.nav-barre a:hover {
+    text-decoration: underline; /* text souligné*/
+    text-decoration-color: #9E91B7; /* Couleur de soulignement */
+    text-decoration-thickness: 2px; /* Épaisseur du soulignement */
+    text-underline-offset: 5px; /* Décaler le soulignement vers la gauche */
+}
+h1 {
+    font-family: 'PantheraRegular-MVZ9J'; /* typographie*/
+    letter-spacing: 17px; /* espacement des lettres*/
+    color: #9E91B7; /*couleur du text*/
+}
+
+h2 {
+    font-family: 'BEYNO';
+    color: #9E91B7; /*couleur du text*/
+    font-size: 22px;
+}
+
+.homepage {
+    display: flex;
+    width: max-content;
+}
+
+.homepage aside {
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    margin-top: 12vw;
+    margin-left: 5vw;
+    margin-bottom: 12vw;
+}
+
+aside h2, aside h1 {
+    margin-left: 6.9vw;
+}
+aside p { /*la paragraphe dans la page d'accueil*/
+    width:  30vw;
+    font-size: 12px;
+    margin-left: 6.9vw;
+    font-family: 'cantarell';
+    color: rgb(255, 255, 255, 0.8);
+}
+
+aside  a { /*lien voir plus*/
+    color: white;
+    font-family: 'cantarell';
+    font-size: 16px;
+    margin-left: 6.9vw;
+}
+
+aside a:hover {
+    font-size: 20px;
+}
+.BP {
+    position: absolute;
+    margin-right: 20vw;
+
+}
+.BP img {
+    position: absolute;
+    width: 65vw;
+    height: 50vw;
+    margin-left: 35vw;
+    margin-top: 1vw;
+}
+
+.slide {
+    height: 21.4vw; /*hauteur de la section slide*/
+    margin-left: 6vw;
+    margin-bottom: 10vw;
+    margin-top: 6vw;
+    padding-left: 3vw;
+    background-color: #04225f;
+    overflow: hidden;
+    position: relative;
+    width: 100%; /* Ajustez la largeur de la section selon vos besoins */
+}
+
+
+
+
+.carousel-container {
+    display: flex;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.actors {
+    margin-right: 20px;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Pour masquer les boutons Précédent et Suivant en cas de besoin */
+button[disabled] {
+    display: none;
+}
+
+.actors {
+    display: flex;/*disposition en ligne des images et descriptions des acteurs*/
+    align-content: center;
+}
+.actors img {
+    position: relative;
+    align-items: center;
+    width: 295px;
+    height: 341px;
+}
+
+
+
+.descri {
+    display: flex;
+    flex-direction: column;/*disposition en colonne des noms et descriptions des acteurs*/
+    justify-content: center;
+    text-align:justify;
+    margin: 0 1vw 0 1vw;
+}
+
+.descri  h3 {
+    color: rgba(191, 141, 241, 0.5);
+    font-family: 'BEYNO';
+}
+.descri p {
+    font-family: 'cantarell';
+    width: 300px;
+}
+
+article {
+    display: flex;
+    margin: 2vw 5vw 0 15vw; /*les marges de tout l'article*/
+}
+
+.left {/*Les paragraphes sur les personnages*/
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    width: 43vw;
+}
+
+.paragraphe h3 {
+    font-family: 'BEYNO';
+    color: rgba(191, 141, 241, 0.5);
+}
+
+.paragraphe p {
+    font-family: 'cantarell';
+    color: rgb(255, 255, 255, 0.9);
+    font-size: 12px;
+    padding-top: 10px;
+}
+.right { /*Biographie de Boseman/ Black Panthère*/
+    display: flex;
+    flex-direction: column;
+}
+
+.right img:hover {
+    transform: scaleX(1.20) scaleY(1.20);
+    transition: transform 0.3s;
+    
+}
+.challa {
+    width: 40vw;
+    margin-left: 5vw;
+}
+
+
+.fiche:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    height: 35vw;
+    padding: 15vw 4vw 0 4vw;
+    margin-left: 9.7vw;
+    margin-right: 5.5vw;
+    position: absolute;
+    top: 96vw;
+    color: #0B0B0B;
+    background-color: white;
+    border-radius: 15px;
+
+}
+
+.fiche:nth-child(2) h3 {
+    display: flex;
+    color: black;
+    justify-content: center; 
+    font-family: 'cantarell';  
+}
+
+.fiche:nth-child(2) p {
+font-family: 'cantarell';  
+
+}
+
+
+.fiche:nth-child(1) {
+    position: relative;
+    width: 374px;
+    height: 527px;
+    transition: transform 0.3s;
+    z-index: 1;
+    bottom: 25vw;
+    left: 12vw;
+}
+
+.fiche:hover img {
+    transform: scaleX(1.20) scaleY(1.20);
+    transition: transform 0.3s;
+}
+
+.fiche img {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: 20vw;
+}
+
+
+.button {
+    background-color: #3D1DA6;
+    border-radius:5px ;
+    margin: 7px;
+    color: white;
+    font-size: 12px;
+    padding: 7px;
+}
+.info {
+    font-size: 14px;
+    color: rgba(23, 8, 73, 0.8);
+
+}
+.info p {
+    font-family: 'cantarell';  
+
+}
+
+.panther img {
+    margin-top: 34vw;
+    margin-left: 13vw;
+}
+
+.formulaire {
+    background-image: url('../images/Illustrations+ logos/1_landing_page/Pantherhome4.png');
+    height: 75vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+#downup {
+    opacity: 0; /* Commencez par les éléments invisibles */
+    transform: translateY(50vw); /* Les déplace légèrement vers le bas */
+    transition: opacity 2s ease, transform 1.5s ease;
+}
+.formulaire form {
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, rgb(158, 145, 183,1),rgb(61, 45, 166, 0));
+    width: 55vw;
+    height: 35vw;
+    align-items: center;
+}
+
+#downup.visible {
+    opacity: 1; /* Les éléments deviennent visibles */
+    transform: translateY(0); /* Les éléments reviennent à leur position d'origine */
+}
+.join1 {
+    font-family: 'cantarell';
+    font-size: 16px;
+    color: black;
+    margin-top: 4vw;
+}
+
+.join2 {
+    font-family: 'cantarell';
+    font-size: 42px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 3vw;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    background-color: transparent;
+}
+
+.input input {
+    align-items: baseline;
+}
+#name {
+    margin-bottom: 0.6vw;
+}
+#name, #mail {
+    height: 3vw;
+    border: solid 1px black;
+    border-radius: 25px;
+    background-color: transparent;
+}
+
+#text {
+    height: 10vw;
+    border: solid 1px black;
+    margin-top: 1vw;
+    border-radius: 30px;
+
+    background-color: transparent;
+}
+
+#submit {
+    margin: 4vw ;
+    width: 10vw;
+    height: 3vw;
+    border-radius: 25px;
+    transition: transform 0.3s;
+    background-color: #F2CEF2;
+    font-family: 'cantarell';
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#submit:hover {
+    background-color:rgba(193, 121, 176, 0.7);
+    transform: scaleX(1.20) scaleY(1.20);
+    transition: transform 0.3s;
+}
+.custom-input {
+    position: relative;
+    width: 29vw;
+    margin-top: 1vw;
+    
+}
+.custom-input input {
+    height: 3vw;
+    width: 100%;
+    padding: 10px;
+    border: solid 1px black;
+    border-radius: 15px;
+    background-color: transparent;
+    vertical-align: top;
+}
+
+.custom-input label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transition: top 0.3s ease;
+}
+
+.custom-input input:focus + label,
+.custom-input input:not(:placeholder-shown) + label {
+    top: 0;
+    
+}
+
+footer {
+    height: 35vw;
+    background-image: linear-gradient(to bottom, rgb(18, 11, 66,0.8), rgb(2, 23, 64,0.7) );
+    display: flex;
+   
+    align-items:center;
+}
+
+.fond {
+    width: 18vw;
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 12vw;
+    margin-left: 20vw;
+    align-items: center;
+    background-image: url('../images/Illustrations+ logos/Group 2052.png');
+    background-size: 18vw 20vw;
+    background-repeat: no-repeat ;
+}
+.SaynaxMarvel {
+    display: flex;/* Pour aligner les élément dans la div*/
+    align-items: center; /*alignement vertical */
+}
+
+.pagexlink {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10vw;
+    margin-left: 8vw;
+    width: 52vw;
+    height: 20vw;
+}
+.pages {
+    display: flex;
+    flex-direction: column;
+    width: 12vw;
+    margin-left: 2.5vw;
+    
+
+}
+
+.pages h2 {
+    font-family: 'cantarell';
+    color: rgb(177, 169, 169);
+    letter-spacing: 0.616px;
+    font-size: 22px;
+}
+
+.pages a {
+    text-decoration: none;
+    color: rgb(197, 193, 193);
+    font-family: 'cantarell';
+    font-size: 16px;
+    padding-top: 0.5vw;
+}
+
+.link {
+    margin-left: 4vw;
+    width: 25vw;
+}
+
+.link h2 {
+    letter-spacing: 0.616px;
+    font-family: 'cantarell';
+    color: rgb(192, 188, 188);
+    display: flex;
+    font-size: 22px;
+}
+
+.link a {
+    padding: 2px;
+}
+.licence ul{
+    display: flex;
+    font-size: 16px;
+    color: rgb(155, 152, 152);
+}
+
+.licence li {
+    margin-left: 20px;
+}
+
+.prime {
+    list-style-type: none;
+}
+
+
+
+/*effet fondu depuis la gauche*/
+
+.fade-left {
+    opacity: 0; /* Commencez par les éléments invisibles */
+    transform: translateX(-20vw); /* Les déplace légèrement vers la gauche */
+    transition: opacity 2s ease, transform 1.5s ease;
+}
+
+/* Classe pour rendre les éléments visibles */
+.fade-left.visible {
+    opacity: 1; /* Les éléments deviennent visibles */
+    transform: translateX(0); /* Les éléments reviennent à leur position d'origine */
+}

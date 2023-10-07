@@ -1,0 +1,370 @@
+body {
+    width:100%;
+    /*Couleur de l'arerière-plan en radial-gradient*/
+    Background : radial-gradient(126.67% 350.28% at -21.35% 0%,#11213F 0%, #0B0B0B 39.1%, rgba(3, 2, 88, 0.838) 100%);
+    color: white;
+}
+
+header {
+    display: flex; /* disposition en vertical des éléments dans header*/
+    justify-content: space-around;
+}
+
+/*les icones SAYNA X MARVEL*/
+.marvel {
+    
+    display: flex;/* Pour aligner les élément dans la div*/
+    align-items: center; /*alignement vertical */
+    margin: 2vw  30vw 0 5vw;/*les marges de la div marvel*/ 
+}
+
+.marvel img {
+    max-width: 100%; /*Taille maximale qu'un contenu peut avoir*/
+    padding: 0.2vw; /*Espace entre les contenus*/
+}
+.nav-barre {
+    margin-left: 12vw;
+    align-items: center;
+    display: flex;
+    margin-right: 5vw;
+}
+.nav-barre a {
+    padding: 2vw 2vw 0 2vw; /*espace entre les éléments*/
+    text-decoration: none; /*Pas de soulignement*/
+    font-family: 'BEYNO';/* typogaraphie*/
+    font-size: 16px;/*taille des textes*/
+    color: #9E91B7;/*couleur des textes*/
+}
+
+#home {
+    text-decoration: underline;
+    text-decoration-color: #9E91B7;
+    text-decoration-thickness: 2px; /* Épaisseur du soulignement */
+    text-underline-offset: 5px; /* Décaler le soulignement vers la gauche */
+}
+.nav-barre a:hover {
+    text-decoration: underline; /* text souligné*/
+    text-decoration-color: #9E91B7; /* Couleur de soulignement */
+    text-decoration-thickness: 2px; /* Épaisseur du soulignement */
+    text-underline-offset: 5px; /* Décaler le soulignement vers la gauche */
+}
+aside {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    height: 40vw;
+    margin-left: 45vw;
+}
+
+.container h1 {
+    font-family: 'BEYNO';/* typogaraphie*/
+    color: #9E91B7;/*couleur des textes*/
+    font-size: 2vw;
+}
+
+.container>img {
+    position: absolute;
+    width: 60vw;
+    height:32vw ;
+    top: 230px;
+    left: 48vw;
+}
+.first-image {
+    position: absolute;
+}
+.first-image img {
+    width: 70vw;
+}
+
+.fondpic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 48vw;
+    height: 28vw;
+
+}
+.milaje {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    margin-top: 80px;
+
+}
+
+.milaje p {
+    font-size: 0.8vw;
+    text-align: justify;
+    transition: transform 0.3s;
+
+}
+.milaje p:hover {
+    transform: scaleX(1.20) scaleY(1.20);
+    transition: transform 0.3s;
+}
+
+.enigme   {
+    display: flex;
+    width: 95vw;
+    height: 45vw;
+    flex-direction: row;
+    margin-bottom: 20vw;
+
+}
+
+.enigme2 {
+    display: flex;
+    width: 95vw;
+    height: 45vw;
+    flex-direction: row;
+    margin-bottom: 20vw;
+}
+.enigme3 {
+    display: flex;
+    width: 95vw;
+    height: 45vw;
+    flex-direction: row;
+    margin-bottom: 20vw;
+}
+.sujet {
+    width: 35vw;
+    margin-left: 10vw;
+}
+.sujet h2 {
+    font-family: 'BEYNO';/* typogaraphie*/
+    color: #9E91B7;/*couleur des textes*/
+    font-size: 2vw;
+}
+.sujet p {
+    display: flex;
+}
+
+.quest {
+    font-size: 12px;
+    margin-bottom: 3vw;
+    width: 25vw;
+}
+
+.subject {
+    font-family: 'WakandaForever-Regular';
+    color: #9E91B7;/*couleur des textes*/
+    font-size: 2vw;
+    margin-bottom: 4vw;
+    width: 35vw;
+}
+.reponse {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    justify-content: center;
+}
+
+.text {
+    height: 2.5vw;
+    background-color: transparent;
+    border-radius: 20px;
+    color: #9E91B7;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.submit {
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 3vw 10vw 0 6vw;
+    background-color: rgba(239, 211, 247, 0.9);
+    border: none;
+    text-transform: uppercase;
+    color: #021740;
+    font-weight: bold;
+}
+
+.submit:hover {
+    width: 120px;
+    height: 50px;
+    border-radius: 30px;
+    background-color:  rgba(224, 147, 245, 0.9);
+
+}
+.indice {
+    display: flex;
+    width: 45vw;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4vw;
+}
+
+.conta {
+    width: 30vw;
+}
+
+.popupcontainer {
+    width: 95vw;
+    height: 45vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 45vw;
+    backdrop-filter: blur(10px);
+}
+
+.enigmecontainer {
+    width: 95vw;
+    height: 35vw;
+    margin-bottom: 30vw;
+}
+#popup {
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, rgb(158, 145, 183,1),rgb(61, 45, 166, 0));
+    width: 55vw;
+    height: 35vw;
+    align-items: center;
+    text-align: center;
+    
+    justify-content: center;
+}
+
+#popup h3 {
+    margin-top: 6vw;
+    font-family: 'cantarell';
+    margin-bottom: 10vw;
+    width: 300px;
+}
+
+.pop button {
+    width: 300px;
+    height: 60px;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #021740;
+    background-color: rgba(239, 211, 247, 0.9);
+    border: none;
+}
+
+.pop button:hover {
+    width: 330px;
+    height: 70px;
+    background-color:  rgba(224, 147, 245, 0.9);
+    border-radius: 30px;
+    
+}
+
+
+
+
+
+
+
+
+
+footer {
+    height: 35vw;
+    background-image: linear-gradient(to bottom, rgb(18, 11, 66,0.8), rgb(2, 23, 64,0.7) );
+    display: flex;
+   
+    align-items:center;
+}
+
+.fond {
+    width: 18vw;
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 12vw;
+    margin-left: 20vw;
+    align-items: center;
+    background-image: url('../images/Illustrations+ logos/Group 2052.png');
+    background-size: 18vw 20vw;
+    background-repeat: no-repeat ;
+}
+.SaynaxMarvel {
+    display: flex;/* Pour aligner les élément dans la div*/
+    align-items: center; /*alignement vertical */
+}
+
+.pagexlink {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10vw;
+    margin-left: 8vw;
+    width: 52vw;
+    height: 20vw;
+}
+.pages {
+    display: flex;
+    flex-direction: column;
+    width: 12vw;
+    margin-left: 2.5vw;
+    
+
+}
+
+.pages h2 {
+    font-family: 'cantarell';
+    color: rgb(177, 169, 169);
+    letter-spacing: 0.616px;
+    font-size: 22px;
+}
+
+.pages a {
+    text-decoration: none;
+    color: rgb(197, 193, 193);
+    font-family: 'cantarell';
+    font-size: 16px;
+    padding-top: 0.5vw;
+}
+
+.link {
+    margin-left: 4vw;
+    width: 25vw;
+}
+
+.link h2 {
+    letter-spacing: 0.616px;
+    font-family: 'cantarell';
+    color: rgb(192, 188, 188);
+    display: flex;
+    font-size: 22px;
+}
+
+.link a {
+    padding: 2px;
+}
+.licence ul{
+    display: flex;
+    font-size: 16px;
+    color: rgb(155, 152, 152);
+}
+
+.licence li {
+    margin-left: 20px;
+}
+
+.prime {
+    list-style-type: none;
+}
+
+
+.fade-left {
+    opacity: 0; /* Commencez par les éléments invisibles */
+    transform: translateX(-20vw); /* Les déplace légèrement vers la gauche */
+    transition: opacity 2s ease, transform 1.5s ease;
+}
+
+/* Classe pour rendre les éléments visibles */
+.fade-left.visible {
+    opacity: 1; /* Les éléments deviennent visibles */
+    transform: translateX(0); /* Les éléments reviennent à leur position d'origine */
+}

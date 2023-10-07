@@ -1,0 +1,238 @@
+body {
+    width:100%;
+    background-color:rgba(1, 11, 31, 0.979);
+    background-repeat: no-repeat;
+    background-size: 105vw 60vw;
+    background-image: url('../images/Illustrations+ logos/2_Wakanda_page/Pantherwakanda1.png');
+
+}
+
+header {
+    display: flex; /* disposition en vertical des éléments dans header*/
+    justify-content: space-around;
+
+}
+
+/*les icones SAYNA X MARVEL*/
+.marvel {
+    
+    display: flex;/* Pour aligner les élément dans la div*/
+    align-items: center; /*alignement vertical */
+    margin: 2vw  30vw 0 5vw;/*les marges de la div marvel*/ 
+}
+
+.marvel img {
+    max-width: 100%; /*Taille maximale qu'un contenu peut avoir*/
+    padding: 0.2vw; /*Espace entre les contenus*/
+}
+.nav-barre {
+    margin-left: 12vw;
+    align-items: center;
+    display: flex;
+    margin-right: 5vw;
+}
+.nav-barre a {
+    padding: 2vw 2vw 0 2vw; /*espace entre les éléments*/
+    text-decoration: none; /*Pas de soulignement*/
+    font-family: 'BEYNO';/* typogaraphie*/
+    font-size: 16px;/*taille des textes*/
+    color: #9E91B7;/*couleur des textes*/
+}
+#home {
+    text-decoration: underline;
+    text-decoration-color: #9E91B7;
+    text-decoration-thickness: 2px; /* Épaisseur du soulignement */
+    text-underline-offset: 5px; /* Décaler le soulignement vers la gauche */
+}
+.nav-barre a:hover {
+    text-decoration: underline; /* text souligné*/
+    text-decoration-color: #9E91B7; /* Couleur de soulignement */
+    text-decoration-thickness: 2px; /* Épaisseur du soulignement */
+    text-underline-offset: 5px; /* Décaler le soulignement vers la gauche */
+}
+
+
+
+
+aside {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    height: 20vw;
+    margin-top: 15vw;
+    margin-left: 11.5vw;
+    margin-bottom: 13vw;
+    color: aliceblue;
+}
+ aside h1 {
+    font-family: 'BEYNO';    /* typographie*/
+    letter-spacing: 17px; /* espacement des lettres*/
+    color: #9E91B7; /*couleur du text*/
+    font-size: 2vw;
+ }
+
+ aside h2 {
+    font-family:'wakanda';
+    color: #9E91B7; /*couleur du text*/
+
+ }
+
+ aside p {
+    display: flex;
+    width: 400px;
+    text-align: justify;
+    font-size: 12px;
+    color: rgb(158, 157, 154);
+ }
+ article {
+    padding-top: 10vw;
+    display: flex;
+    margin: 2vw 5vw 10vw 11.5vw; /*les marges de tout l'article*/
+    color: white;
+    background-image: url('../images/Illustrations+ logos/2_Wakanda_page/Pantherwakanda2.png');
+    background-size: auto 50vw;
+    background-repeat: no-repeat;
+}
+
+.left {/*Les paragraphes sur les personnages*/
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    width: 33vw;
+}
+.paragraphe h2 {
+    font-family: 'BEYNO';
+    color: rgba(191, 141, 241, 0.5);
+}
+
+.paragraphe p {
+    font-family: 'cantarell';
+    color: rgb(255, 255, 255, 0.9);
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+.right {/*Les paragraphes sur les personnages*/
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    width: 33vw;
+    margin-left: 10vw;
+}
+
+.paragraphe2 img {
+    width: 35vw;
+}
+.paragraphe2 h2 {
+    font-family: 'BEYNO';
+    color: rgba(191, 141, 241, 0.5);
+}
+
+.paragraphe2 p {
+    font-family: 'cantarell';
+    color: rgb(255, 255, 255, 0.9);
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+
+footer {
+    height: 35vw;
+    background-image: linear-gradient(to bottom, rgb(18, 11, 66,0.8), rgb(2, 23, 64,0.7) );
+    display: flex;
+   
+    align-items:center;
+}
+
+.fond {
+    width: 18vw;
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 12vw;
+    margin-left: 20vw;
+    align-items: center;
+    background-image: url('../images/Illustrations+ logos/Group 2052.png');
+    background-size: 18vw 20vw;
+    background-repeat: no-repeat ;
+}
+.SaynaxMarvel {
+    display: flex;/* Pour aligner les élément dans la div*/
+    align-items: center; /*alignement vertical */
+}
+
+.pagexlink {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10vw;
+    margin-left: 8vw;
+    width: 52vw;
+    height: 20vw;
+}
+.pages {
+    display: flex;
+    flex-direction: column;
+    width: 12vw;
+    margin-left: 2.5vw;
+    
+
+}
+
+.pages h2 {
+    font-family: 'cantarell';
+    color: rgb(177, 169, 169);
+    letter-spacing: 0.616px;
+    font-size: 22px;
+}
+
+.pages a {
+    text-decoration: none;
+    color: rgb(197, 193, 193);
+    font-family: 'cantarell';
+    font-size: 16px;
+    padding-top: 0.5vw;
+}
+
+.link {
+    margin-left: 4vw;
+    width: 25vw;
+}
+
+.link h2 {
+    letter-spacing: 0.616px;
+    font-family: 'cantarell';
+    color: rgb(192, 188, 188);
+    display: flex;
+    font-size: 22px;
+}
+
+.link a {
+    padding: 2px;
+}
+.licence ul{
+    display: flex;
+    font-size: 16px;
+    color: rgb(155, 152, 152);
+}
+
+.licence li {
+    margin-left: 20px;
+}
+
+.prime {
+    list-style-type: none;
+}
+
+/*effet fondu depuis la gauche*/
+
+.fade-left {
+    opacity: 0; /* Commencez par les éléments invisibles */
+    transform: translateX(-20vw); /* Les déplace légèrement vers la gauche */
+    transition: opacity 2s ease, transform 1.5s ease;
+}
+
+/* Classe pour rendre les éléments visibles */
+.fade-left.visible {
+    opacity: 1; /* Les éléments deviennent visibles */
+    transform: translateX(0); /* Les éléments reviennent à leur position d'origine */
+}
